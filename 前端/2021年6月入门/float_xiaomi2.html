@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float_小米2</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .box {
+            width: 1226px;
+            height: 615px;
+            margin: auto;
+        }
+
+        .left {
+            float: left;
+            width: 234px;
+            height: 615px;
+
+        }
+
+        .left img {
+            float: left;
+            height: 100%;
+        }
+
+        .right {
+            float: left;
+            width: 992px;
+            height: 615px;
+        }
+
+        /* 子代选择器 */
+        .right>div {
+            float: left;
+            width: 234px;
+            height: 300px;
+            margin-left: 14px;
+            margin-bottom: 14px;
+            background-color: #fff;
+        }
+
+        .right .pic {
+            width: 80%;
+            display: block;
+            margin: auto;
+        }
+
+        .right h4 {
+            font-size: 14px;
+            color: black;
+            font-weight: 400;
+            margin: 0;
+            text-align: center;
+
+        }
+
+        .right .describe {
+            color: #b0b0b0;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .right .price {
+            color: #ff6700;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .right5 .price,
+        .other {
+            display: inline-block;
+            text-align: center;
+            margin: 0;
+        }
+
+        .instead {
+            width: 120px;
+            margin: auto;
+        }
+
+
+        .other {
+            color: #b0b0b0;
+            text-decoration: line-through;
+            font-size: 14px;
+        }
+
+        .right1:hover,
+        .right2:hover,
+        .right3:hover,
+        .right4:hover,
+        .right5:hover,
+        .right6:hover,
+        .right7:hover,
+        .right8:hover,
+        .left:hover {
+            box-shadow: 5px 5px 5px 5px #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left">
+            <a href="#"><img src="mi_float2/float_left.webp" alt=""></a>
+        </div>
+        <div class="right">
+            <!-- 右侧第一个盒子 -->
+            <div class="right1">
+                <a href="#">
+                    <img src="mi_float2/float_right1.webp" alt="" class="pic"> </a>
+                <h4>Note 10 Pro</h4>
+                <p class="describe">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">1699元起</p>
+
+            </div>
+
+            <!-- 右侧第二个盒子 -->
+            <div class="right2">
+                <a href="#"><img src="mi_float2/float_right2.webp" alt="" class="pic"></a>
+                <h4>Note 10 5G</h4>
+                <p class="describe">5G小金刚，旗舰长续航</p>
+                <p class="price">1099元起</p>
+            </div>
+            <!-- 右侧第三个盒子 -->
+            <div class="right3">
+                <a href="#"><img src="mi_float2/float_right3.webp" alt="" class="pic"></a>
+                <h4>小米MIX FLOD</h4>
+                <p class="describe">折叠大屏丨自研芯片</p>
+                <p class="price">9999元起</p>
+            </div>
+            <!-- 右侧第四个盒子 -->
+            <div class="right4">
+                <a href="#"><img src="mi_float2/float_right4.webp" alt="" class="pic"></a>
+                <h4>小米11 Ultra</h4>
+                <p class="describe">1/1.12"GN2丨2K四微曲屏</p>
+                <p class="price">5999元起</p>
+            </div>
+            <!-- 右侧第五个盒子 -->
+            <div class="right5">
+                <a href="#"><img src="mi_float2/float_right5.webp" alt="" class="pic"></a>
+                <h4>小米11 Pro</h4>
+                <p class="describe">1/1.12"GN2丨骁龙888</p>
+                <div class="instead">
+                    <span class="price">4499元起</span>
+                    <span class="other">4999元</span>
+                </div>
+            </div>
+            <!-- 右侧第六个盒子 -->
+            <div class="right6">
+                <a href="#"><img src="mi_float2/float_right6.webp" alt="" class="pic"></a>
+                <h4>小米11青春版</h4>
+                <p class="describe">小米11青春版 轻薄</p>
+                <p class="price">2299元起</p>
+            </div>
+            <!-- 右侧第七个盒子 -->
+            <div class="right7">
+                <a href="#"><img src="mi_float2/float_right7.webp" alt="" class="pic"></a>
+                <h4>K40游戏增强版</h4>
+                <p class="describe">轻薄电竞设计</p>
+                <p class="price">1999元起</p>
+            </div>
+            <!-- 右侧第八个盒子 -->
+            <div class="right8">
+                <a href="#"><img src="mi_float2/float_right8.webp" alt="" class="pic"></a>
+                <h4>黑鲨4 Pro</h4>
+                <p class="describe">黑鲨4 Pro</p>
+                <p class="price">3999元起</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
